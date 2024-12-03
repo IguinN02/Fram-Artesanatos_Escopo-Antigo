@@ -1,0 +1,37 @@
+.botoes__carrinho {
+	background-color: var(--branco);
+}
+
+.botao__carrinho.active .cabecalho__nav__carrinho {
+	position: absolute;
+	right: 10px;
+}
+
+.botao__carrinho.active .icon__x {
+	display: block;
+	position: absolute;
+	top: -10px;
+}
+
+.botao__carrinho.active .botoes__carrinho .cabecalho__nav__carrinho_img {
+	display: none;
+}
+
+.cabecalho__nav__carrinho {
+	cursor: pointer;
+	border: none;
+}
+
+.botoes__carrinho .icon__x {
+	display: none;
+	position: absolute;
+	height: 28px;
+}
+
+.lista__carrinho {
+	z-index: 2;
+}
+
+.cabecalho__nav__carrinho {
+	z-index: 3;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/global/global.css" />
+  <link rel="stylesheet" href="assets/css/pages/pagamento_metodo/import_pagamento_metodo.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/global/icon_logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Fran Artesanatos</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <nav class="cabecalho__nav">
+      <h1 class="cabecalho__nav__titulo">
+        <a href="index.html"><b class="titulo_destaque">Fran</b> Artesanatos</a>
+      </h1>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <section class="botao__carrinho_alterado margin_fixed_plus">
+      <ul class="lista__carrinho_alterado">
+
+        <div class="produtos__pago">
+          <h2 class="lista__titulo__carrinho">Seus Produtos</h2>
+
+          <div class="cart-item">
+            <img src="assets/images/pages/index/foto_produto.jfif" alt="Nome do Produto">
+            <div class="item-details">
+              <h3>Nome do Produto</h3>
+              <p>R$35,99</p>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="assets/images/pages/index/foto_produto2.webp" alt="Nome do Produto">
+            <div class="item-details">
+              <h3>Nome do Produto</h3>
+              <p>R$35,99</p>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <section class="bloco_pagameto">
+          <div class="endereco">
+            <p class="titulo__enviar" for="endereco">Enviar Para:</p>
+            <input class="login__input" type="text" id="endereco" name="endereco" value="' . $row[" endereco readonly>
+          </div>
+
+          <div class="endereco total_pedido">
+            <p class="titulo__enviar" for="endereco">Total do seu Pedido:</p>
+            <input class="login__input" type="text" id="total" name="total" value="' . $row[" total readonly>
+          </div>
+
+          <form class="endereco__form login__form" action="" method="post">
+            <div class="metodo_pagamento">
+              <h2 class="titulo__enviar metodo_titulo">Método de Pagamento</h2>
+
+              <div class="shipping-method top">
+                <label class="iten__envio">
+                  <input class="input_cartao input__envio" id="input_cartao" type="radio" name="shipping">
+                  <img class="img_metodo" src="assets/images/pages/pagamento_metodo/CreditCard2Front.svg" alt="Cartão">
+                  Cartão de Crédito/Débito
+                </label>
+              </div>
+
+              <div class="shipping-method bottom">
+                <label class="iten__envio">
+                  <input class="input_pix input__envio" id="input_pix" type="radio" name="shipping">
+                  <img class="img_metodo" src="assets/images/pages/pagamento_metodo/icons8-pix.svg" alt="Pix">
+                  Pix
+                </label>
+              </div>
+            </div>
+
+            <div class="div_cartao endereco">
+              <input class="login__input" type="text" id="num_cartao" oninput="applyPhoneMask(event)" maxlength="19"
+                placeholder="Número do Cartão:">
+
+              <input class="login__input" type="text" id="nome_cartao" placeholder="Nome do Cartão:" maxlength="30">
+
+              <input class="login__input" type="text" id="val_cartao" oninput="applyVformatValiMask(event)"
+                maxlength="5" placeholder="MM/AA">
+
+              <input class="login__input" type="text" id="cvc_cartao" oninput="applyPhoneMask(event)" maxlength="3"
+                placeholder="CVC:">
+            </div>
+
+            <div class="div_pix">
+              <h2 class="titulo_pix">Faça o pagamento com o Pix copia e cola</h2>
+              <p class="texto_pix">O número do pedido é xxxxxxxxx e o prazo de entrega começa a contar a partir da
+                aprovação do
+                pagamento.</p>
+              <p class="codigo_pix">
+                00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/8d9316d5-85d8-48d5-855d-6cac95b4f8da5204000053039865802BR5925FISIA
+                COMERCIO DE PRODUTO6009SAO PAULO62070503***63046EED
+              </p>
+              <button class="botao__continuar ">
+                <p>Copiar código Pix</p>
+              </button>
+            </div>
+
+          </form>
+        </section>
+
+        <div class="div__continuar">
+          <button class="botao__continuar">
+            <p>Confirmar Pagamento</p>
+          </button>
+        </div>
+        <a class="link__voltar" href="pagamento_envio.html">
+          <img class="img_voltar" src="assets/images/global/Arrow - Right.svg" alt="Voltar">
+          <p class="voltar">Voltar</p>
+        </a>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="rede__sociais">
+      <a href="https://br.pinterest.com/" target="_blank">
+        <img class="redes__sociais__icons" src="assets/images/pages/index/pinterest-icon.svg" alt="Pinterest" />
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img class="redes__sociais__icons" src="assets/images/pages/index/facebook-icon.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img class="redes__sociais__icons" src="assets/images/pages/index/instagram-icon.svg" alt="Instagram" />
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <img class="redes__sociais__icons" src="assets/images/pages/index/twitter-icon.svg" alt="Twitter" />
+      </a>
+      <a href="https://wa.me/5511942957858" target="_blank">
+        <img class="redes__sociais__icons" src="assets/images/pages/index/whatsapp-icon.svg" alt="WhatsApp" />
+      </a>
+    </div>
+
+    <div class="titulo__sub">
+      <h1 class="cabecalho__nav__titulo titulo__rodape">
+        <a href="index.html"><b class="titulo_destaque">Fran</b> Artesanatos</a>
+      </h1>
+      <p class="rodape__descricao">
+        Descrição da loja: Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Accusantium, nesciunt pariatur facere nobis.
+      </p>
+    </div>
+
+    <div class="num_email__local">
+      <p class="numero">
+        <img class="icon__numero rodape__icon" src="assets/images/pages/index/icon_footer (1).png" alt="Telefone" />
+        <a href="https://wa.me/5511942957858" target="_blank">+55 (11) 94295-7858</a>
+      </p>
+
+      <p class="email">
+        <img class="icon__email rodape__icon" src="assets/images/pages/index/icon_footer (2).png" alt="E-Mail" />
+        <a href="mailto:igoroliveira0150@gmail.com" target="_blank">igoroliveira0150@gmail.com</a>
+      </p>
+
+      <p class="local">
+        <img class="icon__local rodape__icon" src="assets/images/pages/index/icon_footer (3).png" alt="Localição" />
+        <a href="https://www.google.com/maps/place/R.+Narcise+Carbonel,+717+-+Jardim+Monte+Belo,+S%C3%A3o+Paulo+-+SP,+05266-020/@-23.4461481,-46.8034576,17z/data=!3m1!4b1!4m6!3m5!1s0x94cefd0e8307fda9:0x285536089eddee23!8m2!3d-23.446153!4d-46.8008827!16s%2Fg%2F11c1bmr1qz?entry=tts&g_ep=EgoyMDI0MDkxMC4wKgBIAVAD"
+          target="_blank">
+          Brasil, São Paulo, São Paulo, Parque Esperança, R. Narcise Carbonel,
+          N°717
+        </a>
+      </p>
+    </div>
+
+    <div class="rodape__mais__info">
+      <h4 class="rodape__titulos">Ajuda</h4>
+      <p class="rodape__itens__info"><a href="sobre_nos.html">Contate-nós</a></p>
+      <h4 class="rodape__titulos">Minha Conta</h4>
+      <p class="rodape__itens__info"><a href="conta.html">Conta</a></p>
+      <h4 class="rodape__titulos">Atendimento ao Cliente</h4>
+      <p class="rodape__itens__info"><a href="sobre_nos.html">Sobre nós</a></p>
+    </div>
+
+    <hr class="linha" />
+
+    <div class="rodape__creditos">
+      <p class="creditos1">@ 2024 Fran Artesanatos</p>
+      <div class="creditos">
+        <p class="creditos2">Privacy Policy</p>
+        <p class="creditos3">terms and conditions</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/pages/sobre_nos/scroll.js"></script>
+  <script src="assets/js/pages/pagamento_metodo/input_cartao_pix.js"></script>
+  <script src="assets/js/global/pagamento_metodo_num_cartao.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.titulo__procurar__botao {
+  font-family: var(--fonte-principal);
+  background-color: var(--branco);
+}
+
+.dois__itens {
+  color: var(--preto);
+}
+
+.botao__procurar {
+  cursor: pointer;
+  border: none;
+}
+
+.lista__procurar {
+  display: none;
+}
+
+.icon__x {
+  display: none;
+}
+
+.lista__procurar {
+  z-index: 2;
+}
+
+.botao__procurar {
+  z-index: 3;
+}
+
+.botaoProcurar.active .lista__procurar {
+  display: block;
+}
+
+.botaoProcurar.active .sumir {
+  display: none;
+}
+
+.botaoProcurar.active .icon__x {
+  display: block;
+}
+
+.botaoProcurar.active .tres__itens {
+  display: none;
+}

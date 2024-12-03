@@ -1,0 +1,91 @@
+.bloco_pagameto {
+  padding-inline: 1.5rem;
+}
+
+.total_pedido {
+  margin-top: 1.5rem;
+}
+
+.metodo_titulo {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.div__continuar {
+  margin-top: 2rem;
+}
+
+.iten__envio {
+  display: flex;
+  align-items: center;
+}
+
+.img_metodo {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .5rem;
+}
+
+.div_cartao {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.div_pix {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 0;
+  gap: 1rem;
+  padding-inline: .5rem;
+  color: var(--preto);
+}
+
+.titulo_pix {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.texto_pix {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.codigo_pix {
+  word-break: break-all;
+  white-space: normal;
+  font-size: .7rem;
+  margin-bottom: 2.5rem;
+}
+
+.botao__pix {
+  width: max-content;
+  font-size: 1rem;
+  padding-inline: 1rem;
+  border-radius: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .produtos__pago {
+    padding-top: 3vh;
+    padding-inline: 8vw;
+  }
+
+  .metodo_pagamento {
+    padding-inline: 10vw;
+  }
+
+  .bloco_pagameto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botao__continuar {
+    margin-top: 0vh;
+    width: 40vw;
+  }
+}

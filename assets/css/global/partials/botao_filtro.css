@@ -1,0 +1,51 @@
+.filtro {
+  padding: .6rem 0 .6rem 1.6rem;
+  border: 4px solid var(--rosa);
+  border-left: 8px solid var(--rosa);
+  border-right: none;
+  background-color: var(--branco);
+}
+
+.filtro.active .botao__filtro {
+  position: absolute;
+  margin-left: 75vw;
+  transition: 1s;
+}
+
+.filtro.active .icon__x {
+  display: block;
+  position: absolute;
+  top: -3.5rem;
+}
+
+.filtro.active .borda__filtro .titulo__filtro__botao {
+  display: none;
+}
+
+.botao__filtro {
+  cursor: pointer;
+  border: none;
+  transition: 1.3s;
+}
+
+.borda__filtro .icon__x {
+  display: none;
+  height: 28px;
+  position: absolute;
+}
+
+.titulo__filtro__botao {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--fonte-principal);
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.lista__filtro {
+  z-index: 2;
+}
+
+.botao__filtro {
+  z-index: 3;
+}

@@ -1,0 +1,137 @@
+.titulo__conta {
+  margin-bottom: .3rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  margin-block: 3rem;
+  margin-inline: 2rem;
+  padding: 1.5rem;
+  gap: 16px;
+  border-radius: 8px;
+  color: var(--preto);
+  background-color: var(--branco);
+  box-shadow: 10px 0 20px -10px var(--cinza);
+}
+
+.botoes button {
+  white-space: nowrap;
+  border: none;
+  width: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--fonte-principal);
+  color: var(--preto);
+}
+
+.botoes button:hover {
+  color: var(--rosa);
+  transition: 0.3s;
+}
+
+.botoes button.active {
+  color: var(--rosa);
+  transition: 0.5s;
+}
+
+.opcoes__informacao {
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-25px);
+  transition: 1s ease;
+}
+
+.opcoes__informacao.show {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.opcoes__senha {
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-25px);
+  transition: 1s ease;
+}
+
+.opcoes__senha.show {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.opcoes__endereco {
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  transform: translateY(-25px);
+  transition: 1s ease;
+}
+
+.opcoes__endereco.show {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .botoes {
+    align-items: center;
+    text-align: center;
+    width: 59vw;
+  }
+
+  .botoes button {
+    width: max-content;
+    background-color: var(--branco);
+  }
+
+  .opcoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informacao__titulo {
+    text-align: center;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    margin-inline: 3vw;
+  }
+
+  .row div {
+    margin: 0 2vw;
+  }
+
+  .login__save {
+    margin-inline: 5vw;
+  }
+}

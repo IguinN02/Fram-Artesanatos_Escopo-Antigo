@@ -1,0 +1,34 @@
+.produtos_pesquisar {
+	padding-bottom: 1.5rem;
+}
+
+.dois__centro {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+
+.itens__menu__hamburguer {
+	margin-top: -1vh;
+	margin-left: -1rem;
+}
+
+.font {
+	font-size: 1.4rem;
+	color: var(--preto);
+	font-weight: 400;
+}
+
+@media screen and (min-width: 1024px) {
+	.botaoProcurar.active .itens__menu__hamburguer {
+		margin-left: -4rem;
+	}
+
+	.centralizar {
+		margin-left: 3rem;
+	}
+
+	.Estilo-Posicao {
+		margin-left: 3.8rem;
+	}
+}

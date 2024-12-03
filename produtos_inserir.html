@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/global/produto_inserir.css">
+  <link rel="stylesheet" href="assets/css/global/global.css">
+  <title>Gerenciar Produtos</title>
+</head>
+
+<body>
+  <form class="login__form" id="produtoForm">
+    <h1 class="titulo">Gerenciar Produtos</h1>
+
+    <input class="login__input input" type="text" id="IdProduto" placeholder="ID do Produto (Somente para atualizar)"
+      maxlength="10" />
+
+    <input class="login__input input" type="text" id="NomeProduto" placeholder="Nome do Produto:" maxlength="50"
+      required />
+
+    <input class="login__input input" type="text" id="ValorProduto" placeholder="Valor do Produto:" maxlength="6"
+      required />
+
+    <input class="login__input" type="text" id="DescricaoProduto" placeholder="Descrição do Produto:" maxlength="100"
+      required />
+
+    <input class="login__input" type="text" id="ImgProduto" placeholder="Imagem:" maxlength="100" required />
+
+    <div class="button">
+      <button class="login__submit" type="submit" id="btnSalvar">Salvar Produto</button>
+      <button class="login__submit" type="button" id="btnAtualizar">Atualizar Produto</button>
+      <button class="login__submit" type="button" id="btnApagar">Apagar Produto</button>
+    </div>
+
+  </form>
+
+  <script src="assets/js/pages/produtos_inserir/add_produto.js"></script>
+</body>
+
+</html>

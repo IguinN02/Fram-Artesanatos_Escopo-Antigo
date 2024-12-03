@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin: 0;
+  height: 100vh; 
+}
+
+.centralizado {
+  text-align: center; 
+}
+
+.lista_itens {
+  margin: 10px 0;
+}
+
+.titulo {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 3rem;
+  gap: 12px;
+}
+
+.login__input {
+  border-radius: 6px;
+  padding: 12px 10px 10px 20px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.login__submit {
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 16px;
+}

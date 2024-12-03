@@ -1,0 +1,41 @@
+.subbotao {
+  margin: 2rem 0 0rem 2.5rem;
+}
+
+.titulo__tipo__botao {
+  font-size: 1.7rem;
+  font-family: var(--fonte-principal);
+  background-color: var(--branco);
+}
+
+.subbotao.active .botao__tipo {
+  position: absolute;
+}
+
+.botao__tipo {
+  cursor: pointer;
+  border: none;
+}
+
+.lista__tipo {
+  margin-top: 1.5rem;
+  z-index: 2;
+}
+
+.botao__tipo {
+  z-index: 3;
+}
+
+.subbotao {
+  height: 1%;
+  transition: 0.7s;
+}
+
+.subbotao.active {
+  height: 32%;
+  transition: 0.7s;
+}
+
+.subsubbotao {
+  height: 1%;
+}

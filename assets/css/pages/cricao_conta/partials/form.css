@@ -1,0 +1,123 @@
+.login__form {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  font-size: 1rem;
+}
+
+.titulo__nome {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  color: var(--rosa-escuro);
+}
+
+.login__input {
+  padding: 11px 60px 10px 20px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 2px solid var(--rosa);
+  outline-color: var(--rosa);
+  color: var(--preto);
+}
+
+.login__input::placeholder {
+  color: var(--preto);
+}
+
+.campo__input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo__input i {
+  cursor: pointer;
+  position: absolute;
+  top: 0.7rem;
+  right: 5%;
+  font-size: 1.7rem;
+  color: var(--rosa-escuro);
+}
+
+.login__submit {
+  width: 1fr;
+  border-radius: 4px;
+  border: 1rem solid var(--rosa);
+  font-size: 1.3rem;
+  color: var(--branco);
+  background-color: var(--rosa);
+  transition: all 0.2s ease-in-out;
+}
+
+.login__submit:hover {
+  transform: scale(1);
+  box-shadow: 0 0 15px 5px var(--rosa);
+}
+
+.ou {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: var(--rosa-escuro);
+}
+
+.texto__voltar {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  color: var(--preto);
+}
+
+.link__voltar {
+  display: flex;
+  justify-content: center;
+  margin: .5rem 0 3rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--preto);
+}
+
+.background__branco {
+  margin: 2rem 1rem;
+  padding-bottom: 0.1rem;
+  border-radius: 12px;
+  background-color: var(--branco);
+  box-shadow: 10px 0 20px -10px var(--cinza);
+}
+
+@media screen and (min-width: 1024px) {
+  .background__branco {
+    margin-inline: 15vw;
+  }
+
+  .grid a {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 75vw;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+  }
+
+  .row div {
+    margin: 0 2vw;
+  }
+
+  .titulo__nome {
+    margin: 0 2vw;
+  }
+
+  .login__submit {
+    margin-inline: 2vw;
+    margin-top: 3vh;
+  }
+}

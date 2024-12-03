@@ -1,0 +1,35 @@
+.subbotao.active .lista__tipo {
+	pointer-events: all;
+	clip-path: inset(0 0 0 0);
+	transition: 0.7s;
+}
+
+.subsubbotao.active .lista__tipo {
+	transition: 0.7s ease-in;
+}
+
+.lista__tipo {
+	display: flex;
+	flex-direction: column;
+	pointer-events: none;
+	clip-path: inset(0 0 100%);
+	width: 100%;
+	height: 100%;
+}
+
+.item__tipo {
+	display: flex;
+	margin: 2rem 0 0 0.9rem;
+	font-size: 1.3rem;
+	color: var(--preto);
+}
+
+.link__tipo {
+	color: var(--preto);
+}
+
+.input__tipo_preco {
+	cursor: pointer;
+	margin-right: 0.7rem;
+	accent-color: var(--rosa);
+}

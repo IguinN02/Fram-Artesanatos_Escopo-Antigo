@@ -1,0 +1,23 @@
+@import url("reset.css");
+@import url("styles.css");
+@import url("fonts.css");
+
+@import url("partials/cabecalho.css");
+@import url("partials/botao_hamburguer.css");
+@import url("partials/itens_hamburguer.css");
+@import url("partials/botao_procurar.css");
+@import url("partials/logo.css");
+@import url("partials/icon_carrinho.css");
+
+@import url("partials/rodape.css");
+@import url("partials/info_rodape.css");
+
+@import url("partials/botao_filtro.css");
+@import url("partials/itens_filtro.css");
+
+@import url("partials/botao_carrinho.css");
+@import url("partials/itens_carrinho.css");
+
+@import url("partials/procurar.css");
+@import url("partials/procurar_itens.css");
+@import url("partials/barra__pesquisa.css");

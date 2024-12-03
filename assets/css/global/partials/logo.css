@@ -1,0 +1,31 @@
+.cabecalho__nav__titulo a {
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--preto);
+}
+
+.titulo_destaque {
+	color: var(--rosa);
+}
+
+/*SCROLL_________________________________________________________________________________________________________*/
+
+@media screen and (min-width: 1024px) {
+	body::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	body::-webkit-scrollbar-track {
+		background: var(--cor-de-fundo);
+	}
+
+	body::-webkit-scrollbar-thumb {
+		border-radius: 20px;
+		background-color: var(--rosa);
+		border: 3px solid var(--cor-de-fundo);
+	}
+
+	.cabecalho__nav__titulo a {
+		font-size: 1.9rem;
+	}
+}

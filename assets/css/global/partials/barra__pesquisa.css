@@ -1,0 +1,31 @@
+.input__procurar {
+  border: none;
+  font-size: 1.2rem;
+  padding-left: .5rem;
+}
+
+.input__procurar::placeholder {
+  color: var(--preto);
+}
+
+.input__procurar:focus {
+  border: none;  
+  outline: none;
+}
+
+.centralizar {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.barra__pesquisa {
+  margin-top: 2px;
+}
+
+.fechar__procurar {
+  position: absolute;
+  cursor: pointer;
+  right: 32px;
+  margin-bottom: -14px;
+}

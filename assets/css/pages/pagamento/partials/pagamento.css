@@ -1,0 +1,141 @@
+.cabecalho__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.botao__carrinho_alterado,
+.opcoes__informacao {
+  margin: 2rem 12px;
+  border-radius: 8px;
+  background-color: var(--branco);
+  box-shadow: 10px 0 20px -10px var(--cinza);
+}
+
+.lista__titulo__carrinho {
+  font-size: 1.5rem;
+  padding-bottom: 0;
+  padding-inline: 1.2rem;
+}
+
+hr {
+  margin-top: 2rem;
+}
+
+.div__continuar {
+  margin-top: 4rem;
+}
+
+.opcoes__endereco,
+.opcoes__informacao {
+  margin-inline: 0px;
+}
+
+.login__save {
+  display: flex;
+  justify-content: center;
+}
+
+.link__voltar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.5rem;
+  padding-bottom: 2.5rem;
+  color: var(--rosa-escuro);
+}
+
+.img_voltar {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.endereco {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+}
+
+.titulo__enviar {
+  font-size: 1.2rem;
+  padding-inline: .5rem;
+  margin-bottom: 1rem;
+  color: var(--preto);
+}
+
+.shipping-method {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+}
+
+.top {
+  margin-top: 2rem;
+}
+
+.bottom {
+  margin-bottom: 3rem;
+}
+
+.iten__envio {
+  display: flex;
+  font-size: 1rem;
+  color: var(--preto);
+}
+
+.input__envio {
+  cursor: pointer;
+  margin-right: 0.7rem;
+  accent-color: var(--rosa);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.row div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .margin_fixed_plus {
+    align-items: center;
+    margin-top: 8rem;
+  }
+
+  .endereco {
+    margin-inline: 10vw;
+    width: 40vw;
+  }
+
+  .principal {
+    margin-inline: 15vw;
+  }
+
+  .bloco__endereco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .informacao__titulo {
+    text-align: center;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    margin-inline: 3vw;
+  }
+
+  .row div {
+    margin: 0 2vw;
+  }
+
+  .login__save {
+    margin-inline: 5vw;
+  }
+}
